@@ -13,8 +13,6 @@ Write-Host  -ForegroundColor Green "Start OSDCloud"
 Start-OSDCloud -OSBuild "21H2" -OSEdition Enterprise -ZTI -OSVersion "Windows 10" -Restart -Product "0B15"
 
 #Restart from WinPE
-#Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
-#Start-Sleep -Seconds 20
-Write-Host "Press any key to continue..."
-$Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
+Start-Sleep -Seconds 20
 wpeutil reboot
