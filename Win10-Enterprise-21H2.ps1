@@ -16,9 +16,9 @@ Import-Module OSD -Force
 
 #Start OSDCloud ZTI the RIGHT way
 Write-Host  -ForegroundColor Green "Start OSDCloud"
-Start-OSDCloud -OSBuild "21H2" -OSEditionID Enterprise -ZTI -OSVersion "Windows 10" -Restart
+Start-OSDCloud -OSBuild "21H2" -OSEdition Enterprise -ZTI -OSVersion "Windows 10" -Restart
 
 #Restart from WinPE
-Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
-Start-Sleep -Seconds 20
+#Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
+#Start-Sleep -Seconds 20
 wpeutil reboot
