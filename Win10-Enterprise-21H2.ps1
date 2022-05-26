@@ -1,11 +1,5 @@
-Write-Host  -ForegroundColor Green "Starting OSDCloud ZTI RETSD"
+Write-Host  -ForegroundColor Green "Starting OSDCloud ZTI RETSD 1253"
 Start-Sleep -Seconds 5
-
-#Change Display Resolution for Virtual Machine
-if ((Get-MyComputerModel) -match 'Virtual') {
-    Write-Host  -ForegroundColor Green "Setting Display Resolution to 1600x"
-    Set-DisRes 1600
-}
 
 #Make sure I have the latest OSD Content
 Write-Host  -ForegroundColor Green "Updating OSD PowerShell Module"
@@ -21,4 +15,6 @@ Start-OSDCloud -OSBuild "21H2" -OSEdition Enterprise -ZTI -OSVersion "Windows 10
 #Restart from WinPE
 #Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
 #Start-Sleep -Seconds 20
+Write-Host "Press any key to continue..."
+$Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 wpeutil reboot
