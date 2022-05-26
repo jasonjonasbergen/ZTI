@@ -1,4 +1,4 @@
-Write-Host -ForegroundColor Green "Starting OSDCloud ZTI RETSD 258"
+Write-Host -ForegroundColor Green "Starting OSDCloud ZTI RETSD 313"
 Start-Sleep -Seconds 5
 
 #Make sure I have the latest OSD Content
