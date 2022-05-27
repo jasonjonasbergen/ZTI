@@ -12,6 +12,10 @@ Start-Sleep -Seconds 5
 Write-Host -ForegroundColor Green "Start OSDCloud"
 Start-OSDCloud -OSBuild "21H2" -OSLanguage en-us -OSEdition Enterprise -ZTI -OSVersion "Windows 10"
 
+Write-Host "REMOVE USB KEY..."
+$Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+
+
 #Restart from WinPE
 #Write-Host -ForegroundColor Green "Restarting in 20 seconds!"
 #Start-Sleep -Seconds 20
