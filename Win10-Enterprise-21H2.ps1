@@ -1,4 +1,4 @@
-Write-Host -ForegroundColor Green "Starting OSDCloud ZTI RETSD 915"
+Write-Host -ForegroundColor Green "Starting OSDCloud ZTI RETSD 940"
 Start-Sleep -Seconds 5
 
 #Make sure I have the latest OSD Content
@@ -10,7 +10,7 @@ Start-Sleep -Seconds 5
 
 #Start OSDCloud ZTI
 Write-Host -ForegroundColor Green "Start OSDCloud"
-Start-OSDCloud -OSBuild "21H2" -OSLanguage en-us -OSEdition Enterprise -ZTI -OSVersion "Windows 10" -Firmware
+Start-OSDCloud -OSBuild "21H2" -OSLanguage en-us -OSEdition Enterprise -ZTI -OSVersion "Windows 10"
 
 #Restart from WinPE
 #Write-Host -ForegroundColor Green "Restarting in 20 seconds!"
